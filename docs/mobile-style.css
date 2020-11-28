@@ -1,0 +1,33 @@
+@media (max-width: 1140px) { 
+    #menu {
+        position: static;
+    }
+
+    li {
+        margin-left: 0px;
+        margin-right: 1em;
+    }
+
+    #header {
+        width: 80%;
+        margin: 5em auto;
+    }
+
+    body {
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 539px) { 
+    video {
+        width: 100%;
+        height: none;
+    }
+ }
+ 
+
+ @media (max-width: 630px) { 
+    #email-link {
+    font-size: 2.6em;
+    }
+ }
