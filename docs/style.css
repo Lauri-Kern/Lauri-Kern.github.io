@@ -68,3 +68,33 @@ li {
     display: inline-block;
     margin-left: 2em;
 }
+
+#video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution-text {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 300px;
+    height: 300px;
+}
+
+.thumbnail:hover {
+    filter: invert(10%);
+}
