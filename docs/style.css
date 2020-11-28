@@ -18,20 +18,25 @@ body {
     font-size: 6em;
 }
 
+#home-header-text {
+    display: inline;
+    font-size: 8em;
+}
+
 #menu {
     position: absolute;
-    top: 2em;
+    top: 2.3em;
     right: 0px;
     font-size: 2em;
 }
 
 .medium-text {
-    font-size: 3em;
+    font-size: 4em;
     margin: 0px;
 }
 
 .large-text {
-    font-size: 6em;
+    font-size: 7em;
     margin: 0px;
 }
 

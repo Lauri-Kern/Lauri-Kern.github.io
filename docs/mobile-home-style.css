@@ -4,6 +4,7 @@
 
 #hi-text {
     margin-bottom: 5rem;
+    font-size: 8em;
 }
 
 @media (max-width: 730px) { 
