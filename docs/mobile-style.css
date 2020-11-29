@@ -24,6 +24,13 @@
         height: none;
     }
  }
+
+
+ @media (max-width: 577px) {
+    .thumbnail-container {
+        width: 100%;
+    }
+ }
  
 
  @media (max-width: 630px) { 
