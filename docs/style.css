@@ -15,7 +15,7 @@ body {
 
 #header-text {
     display: inline;
-    font-size: 6em;
+    font-size: 5.8em;
 }
 
 #home-header-text {
@@ -65,7 +65,7 @@ a {
 
 ul {
     margin: 0px;
-    padding: 0px;
+    padding: 8px;
 }
 
 li {
