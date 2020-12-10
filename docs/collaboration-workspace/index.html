@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Laura's Collaboration Workspace</title>
+    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/vyv0nrl.css">
+    <link href="style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+ <div class="titel">
+    Hi. This is Laura's Collaboration Workspace
+ </div>
+
+    <div class="ui container">
+        <h1>Project: Haoran's work on OAM Holography </h1>
+
+
+        <div class="ui styled accordion">
+            <div class="title" id="header">
+              <i class="dropdown icon"></i>
+              Clip 1: Beam Shaping
+            </div>
+            <div class="content">
+              This clip will introduce the broad concept of beam shaping and answer the question why it's cool to tailor the wavefronts of electromagnetic (EM) waves. Then it will go over the limitations of phase-only modulation in terms of data processing and introduce the importance of a complex-amplitude
+              <div class="accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Intro to beam shaping
+                </div>
+                <div class="content">
+                    <ol class="ui list">
+                        <li value="•">In classical optics, light (EM-wave) is shaped using waveplates or lenses (for example to make devices such as microscopes/telescopes)</li>
+                        <li value="•">Beam shaping in traditional optical elements means changing an existing wavefront of light i.e. spatial amplitude / phase profile</li>
+                        <li value="•">
+                            <b><b>Problem:</b> </b>
+                            Thickness of optical elements > wavelength of incident light → not useful in compact integrated optical systems. 
+                        </li>
+                        <li value="•">
+                            <b><b>Solution:</b> </b>
+                            With the development of nanofabrication technologies, flat, ultrathin optical components (metasurfaces) can manipulate the amplitude, phase, polarization, frequency or simultaneously multiple parameters of output light in ultrashort distances with subwavelength resolution by tailoring the scattering behaviour of consisted nanostructures</li>
+                        <li value="•">Metasurfaces are created by assembling arrays of miniature, anisotropic light scatterers (resonators such as optical antennas)</li>
+                        <li value="•">The spacing between antennas and their dimensions are much smaller than the wavelength → the metasurfaces, on account of Huygens principle, are able to mould optical wavefronts into arbitrary shapes with subwavelength resolution by introducing spatial variations in the optical response of the light scatterers.</li>
+                        <li value="•">
+                            <b><b>Why is it cool to arbitrarily tailor the wavefront of an electromagnetic wave? </b> </b>
+                            <br/>
+                            <b><b>Answer: </b> </b>
+                            there are many applications in transformation optics and integrated optics (Pick 2 or 3 examples)
+                            <ol  style="padding-left:40px">
+                                <li value="-">Fundamental studies of light-matter interactions [1–5]</li>
+                                <li value="-">Photonic applications in optical microscopy and imaging [6–9]</li>
+                                <li value="-">Meta-holograms for holographic displays [21–24]</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Phase-only Modulation
+                </div>
+                <div class="content">
+                    <ol class="ui list">
+                        <li value="•"><a href="https://capasso.seas.harvard.edu/files/capasso/files/2011_yu_et_al._science.pdf">Yu et al - Light Propagation with PhaseDiscontinuities: Generalized Laws of Reflection and Refraction (2011)</a></li>
+                        <li value="•"><a href="https://capasso.seas.harvard.edu/files/capasso/files/2014_yu_capasso_nature_materials.pdf">Yu & Capasso - Flat optics with designer metasurfaces (2014)</a></li>
+                        <li value="•">In the above papers they say they can tailor both phase AND amplitude with their resonators - does it still mean they can only do one at a time? <b><b>Quote:</b> </b><i>"metasurfaces based on optical scatterers enable us to engineer the spatial distribution of amplitude, phase and polarization response with subwavelength resolution."</i></li>
+                        <li value="•"><b><b>How is a wavefront shaped using metasurfaces?</b></b>
+                            <ol style="padding-left:40px"> 
+                                <li value="-">Metasurfaces break the dependence on the propagation effect by introducing abrupt changes of optical properties</li>
+                                <li value="-">The essence of metasurfaces is to use arrays of antennas with subwavelength separation and with spatially varying geometric parameters (e.g.: antenna shape, size, orientation) to form a spatially varying optical response, which moulds optical wavefronts into shapes that can be designed at will</li>
+                                <li value="-">By spatially tailoring the geometry of the resonators in an array and hence their frequency response, one can design the phase discontinuity along the interface and mold the wavefront of the reflected and refracted beams in nearly arbitrary ways</li>
+                                <li value="-"><b><b>Example: Linear Phase Discontinuity from an array of nano-rods:</b></b> <br/> <img style="padding-top: 10px" width="60%" src="images/linear-discon.png"></img></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Information Processing - Limitations of Phase-only Modulation
+                </div>
+                <div class="content">
+                    <ol class="ui list">
+                        <li value="•">Often times we want to process a wavefront profile: For example, in the case of image processing, typical tasks are to increase the resolution of images or reduce noises</li>
+                        <li value="•">We can utilize the fourier transformation (FT) to transform the image information (gray scaled pixels) form the spatial domain into frequencies domain and do further process like applying filters for certain frequencies before transforming the altered image back to the spatial domian via and inverese fourier transformation (iFT)
+                        </br>
+                        <img style="width: 60%; padding: 15px;" src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\underbrace{&space;\boxed&space;{f(x,y)}&space;}_\text{Spatial&space;Domain}&space;\xrightarrow[\text{FT}]{{\mathcal{F}[f(x,y)]}}&space;\underbrace{&space;\boxed{F(u,v)&space;\xrightarrow[\text{Operation}]{\textit{R[F(u,v)]}}&space;G(u,v))}&space;}_\text{Frequency&space;Domain}&space;\xrightarrow[\text{iFT}]{{{F^{-1}}[G(u,v)]}}&space;\underbrace{&space;\boxed&space;{g(x,y)}&space;}_\text{Spatial&space;Domain}" title="\underbrace{ \boxed {f(x,y)} }_\text{Spatial Domain} \xrightarrow[\text{FT}]{{\mathcal{F}[f(x,y)]}} \underbrace{ \boxed{F(u,v) \xrightarrow[\text{Operation}]{\textit{R[F(u,v)]}} G(u,v))} }_\text{Frequency Domain} \xrightarrow[\text{iFT}]{{{F^{-1}}[G(u,v)]}} \underbrace{ \boxed {g(x,y)} }_\text{Spatial Domain}" />
+
+                        <img style="padding: 15px;" src="images/FT-Filter.jpg">
+                        </li>
+                        <li value="•">
+                            If we want to process the wavefronts generated by phase-only metasurfaces using FT like in the example above, there is a major problem in the reconstuction process of the image during the iFT 
+                            </br>
+                            <b><b></b>Problem of Phase-only modulation:</b>
+                        </li>
+                        <ol>
+                            <li value="-" style="padding-left:40px">For the reconstruction of an image both the phase AND amplitude(magitude) play an important role. 
+                            </li>
+                            <li value="-" style="padding-left:40px">Phase-only or amplitude-only modulation cannot fully reconstruct the original picture 
+                                <img style="width: 60%; padding: 15px;" src="images/phase-only-ifft.png">
+                            </li>
+                        </ol>
+                    </ol>
+                  
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Complex-amplitude Modulation
+                </div>
+                <div class="content">
+                    TEXT FOR COMPLEX-APLITUDE
+                </div>
+              </div>
+            </div>
+            <div class="title" id="header">
+              <i class="dropdown icon"></i>
+              Clip 2: Metasurface Holography
+            </div>
+            <div class="content">
+              <p>This clip introduces the concepts of holography in a "classic" sense and in terms of metasurface holography. It will go over the limitations of metasurface holography and introduce how orbital angular momentum (OAM) of light is used to overcome the limitations. Lastly it goes into more detail of the paper by <a href="https://www.nature.com/articles/s41467-019-11030-1">Ren et al - Metasurface orbital angular momentum holography (2019)</a></p>
+              <div class="accordion">
+                <div class="title">
+                  <i class="dropdown icon"></i>
+                  Intro to Holography
+                </div>
+                <div class="content">
+                    <p>The general concept of how holography works my be best explained using a simplifed setup from "classic" holography:</p>
+                    <ol class="ui list">
+                        <li value="•">Coherent laser light is split into an object beam (OB) and a reference beam (RB)</li>
+                        <li value="•">The OB shines onto the object and its reflections are recorded on a holographic material (usually a film)</li>
+                        <li value="•">The RB is not distorted by an object but coherently shines onto the holographic material </li>
+                        <li value="•">The holographic material records a bunch of interference patterns that result from the object and reference beam 
+                            </br> i.e. OB + RB = Interference Pattern on Holographic Material
+                            </li>
+                        <li value="•">We can rearrange this equation to: 
+                             </br> OB = Interference Pattern on Holographic Material – RB
+                            </br> This means we can recreate the full 3D information of the surface of the of object based on the stored interference pattern on the holographic material without the precence of actual object by shining the refernece onto the holographic material from behind</li>
+                            INSERT VISUAL SCRIP FOR THIS!            
+                    </ol>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    How does Metasurface Holography work?
+                </div>
+                <div class="content">
+                    TEXT METASURFACE HOLOGRAPHY
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Limitations of Metasurface Holography
+                </div>
+                <div class="content">
+                    TEXT LIMITATIONS OD METASURFACE HOLOGRAPHY
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Ren et al - Metasurface orbital angular momentum holography (2019)
+                </div>
+                <div class="content">
+                    TEXT AND EXAMPLED FOR NAT.COM. PAPER
+                </div>
+              </div>
+            </div>
+            <div class="title" id="header">
+                <i  class="dropdown icon"></i>
+                Clip 3: Complex-amplitude OAM Holography
+            </div>
+              <div class="content">
+                <p>This clip will be based on the content presented in clip 2. It will go over the limitations of OAM holography and introduce how to overcome them using diffuser arrays. Then it will emphasize the fabrication process using the nanoscribe. Finally we will look at examples from the paper by  <a href="https://www.nature.com/articles/s41565-020-0768-4?utm_campaign=MultipleJournals_USG_DEVICE&utm_source=Nature_community&utm_medium=Community_sites&utm_content=BenJoh-Nature-MultipleJournals-Engineering-Global">Ren et al - Complex-amplitude metasurface-based orbital angular momentum holography in momentum space (2020)</a></p>
+                <div class="accordion">
+                  <div class="title">
+                    <i class="dropdown icon"></i>
+                    Limitations of OAM holography
+                  </div>
+                  <div class="content">
+                    <p>TEST FOR LIMITATION IN OAM HOL</p>
+                  </div>
+                  <div class="title">
+                      <i class="dropdown icon"></i>
+                      Solution: Diffuser Arrays
+                  </div>
+                  <div class="content">
+                      TEXT DIFFUSER ARRAYS
+                  </div>
+                  <div class="title">
+                      <i class="dropdown icon"></i>
+                      Fabrication
+                  </div>
+                  <div class="content">
+                      TEXT FABRICATION
+                  </div>
+                  <div class="title">
+                    <i class="dropdown icon"></i>
+                    Example Clips form Nature Paper
+                </div>
+                <div class="content">
+                    NATURE PAPER CLIPS
+                </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    <script>
+        $('.ui.accordion').accordion('setting', {
+            exclusive: false
+        });
+        $('.ui.list').list();
+    </script>
+    <script type="text/javascript"
+      src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
+</body>
+</html>
