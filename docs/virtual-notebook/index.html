@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Laura's Collaboration Workspace</title>
+    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyv0nrl.css">
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="titel">
+        Hi. This is Laura's Virtual Notebook
+    </div>
+
+    <div class="ui container">
+
+        <h1>
+            This is a work-in-progress skeleton that will hopefully fill out over time.
+            The idea of the notebook is to compile a collection of the underlying physical principles as well as aid in
+            defining
+            specific goals to work towards and record the progress.
+            <br>
+            <br>
+            I would very much appreciate any input and correction on the content :)
+        </h1>
+
+
+        <div class="ui styled accordion">
+            <div class="title" id="header">
+                <i class="dropdown icon"></i>
+                Metasurface Holography
+            </div>
+
+
+            <div class="content">
+                Until now, this chapter is simply my collection of knowledge on metasurface holography. It is mainly
+                based on Haoran's work. There is NO well-defined goal that I am working towards. Yet.
+                <div class="accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What is the motivation for metasurface holography?
+                    </div>
+
+                    <div class="content">
+                        <ol class="ui list">
+                            <li value="•">Metasurfaces provide a platform for manipulating the wavefront of output light
+                                within ultrashort distance in subwavelength resolution </li>
+                            <li value="•">The cool thing about that is it can be used for scientific as well as
+                                industrial applications </li>
+                        </ol>
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What are metasurfaces?
+                    </div>
+
+                    <div class="content">
+                        <ol class="ui list">
+                            <li value="•">Metasurfaces consisting of arrays of plasmonic or dielectric nanoantennas
+                                these units are called meta-atoms. (-> see summary table for Haoran) </li>
+                            <li value="•">Dielectric nanoantennas are cool because of their ability to arbitrarily
+                                tailor the fundamental properties of the electromagnetic wavefront within ultrashort
+                                distance such as:
+                                <ol style="padding-left:40px">
+                                    <li value="-">Amplitude</li>
+                                    <li value="-">Phase</li>
+                                    <li value="-">Frequency</li>
+                                    <li value="-">Polarization</li>
+                                    <li value="-">Orbital angular momentum (OAM)</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What are the different types of metasurface holography?
+                    </div>
+
+                    <div class="content">
+                        <div class="accordion">
+
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Non-multiplexed Metasurface Holography
+                            </div>
+
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•">Phase-only holography</li>
+                                    <li value="•">Amplitude-only holography</li>
+                                </ol>
+                            </div>
+
+
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Multiplexed Metasurface Holography
+                            </div>
+
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•">OAM-multiplexed holography </li>
+                                    <li value="•"><b>INTRO TO OAM?</b></li>
+                                </ol>
+                            </div>
+
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Other types of Metasurface Holography
+                            </div>
+
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•">Nonlinear metasurface holography </li>
+                                    <li value="•">Harmonic generation </li>
+                                    <li value="•">Nonlinear imaging </li>
+                                    <li value="•">Nonlinear beam shaping </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How do metasurfaces work?
+                    </div>
+
+                    <div class="content">
+                        This might be a good opportunity to give a intro to <b>beam shaping</b> and <b>fourier
+                            optics</b>
+                        wavefront of light in holography.
+
+                        <div class="accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Intro to beam shaping
+                            </div>
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•">In classical optics, light (EM-wave) is shaped using waveplates or
+                                        lenses (for example to make devices such as microscopes/telescopes)</li>
+                                    <li value="•">Beam shaping in traditional optical elements means changing an
+                                        existing wavefront of light i.e. spatial amplitude / phase profile</li>
+                                    <li value="•">
+                                        <b><b>Problem:</b> </b>
+                                        Thickness of optical elements > wavelength of incident light → not useful in
+                                        compact integrated optical systems.
+                                    </li>
+                                    <li value="•">
+                                        <b><b>Solution:</b> </b>
+                                        With the development of nanofabrication technologies, flat, ultrathin optical
+                                        components (metasurfaces) can manipulate the amplitude, phase, polarization,
+                                        frequency or simultaneously multiple parameters of output light in ultrashort
+                                        distances with subwavelength resolution by tailoring the scattering behaviour of
+                                        consisted nanostructures
+                                    </li>
+                                    <li value="•">Metasurfaces are created by assembling arrays of miniature,
+                                        anisotropic light scatterers (resonators such as optical antennas)</li>
+                                    <li value="•">The spacing between antennas and their dimensions are much smaller
+                                        than the wavelength → the metasurfaces, on account of Huygens principle, are
+                                        able to mould optical wavefronts into arbitrary shapes with subwavelength
+                                        resolution by introducing spatial variations in the optical response of the
+                                        light scatterers.</li>
+                                    <li value="•">
+                                        <b><b>Why is it cool to arbitrarily tailor the wavefront of an electromagnetic
+                                                wave? </b> </b>
+                                        <br />
+                                        <b><b>Answer: </b> </b>
+                                        there are many applications in transformation optics and integrated optics (Pick
+                                        2 or 3 examples)
+                                        <ol style="padding-left:40px">
+                                            <li value="-">Fundamental studies of light-matter interactions [1–5]</li>
+                                            <li value="-">Photonic applications in optical microscopy and imaging [6–9]
+                                            </li>
+                                            <li value="-">Meta-holograms for holographic displays [21–24]</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Phase-only Modulation
+                            </div>
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•"><a
+                                            href="https://capasso.seas.harvard.edu/files/capasso/files/2011_yu_et_al._science.pdf">Yu
+                                            et al - Light Propagation with PhaseDiscontinuities: Generalized Laws of
+                                            Reflection and Refraction (2011)</a></li>
+                                    <li value="•"><a
+                                            href="https://capasso.seas.harvard.edu/files/capasso/files/2014_yu_capasso_nature_materials.pdf">Yu
+                                            & Capasso - Flat optics with designer metasurfaces (2014)</a></li>
+                                    <li value="•">In the above papers they say they can tailor both phase AND amplitude
+                                        with their resonators - does it still mean they can only do one at a time?
+                                        <b><b>Quote:</b> </b><i>"metasurfaces based on optical scatterers enable us to
+                                            engineer the spatial distribution of amplitude, phase and polarization
+                                            response with subwavelength resolution."</i>
+                                    </li>
+                                    <li value="•"><b><b>How is a wavefront shaped using metasurfaces?</b></b>
+                                        <ol style="padding-left:40px">
+                                            <li value="-">Metasurfaces break the dependence on the propagation effect by
+                                                introducing abrupt changes of optical properties</li>
+                                            <li value="-">The essence of metasurfaces is to use arrays of antennas with
+                                                subwavelength separation and with spatially varying geometric parameters
+                                                (e.g.: antenna shape, size, orientation) to form a spatially varying
+                                                optical response, which moulds optical wavefronts into shapes that can
+                                                be designed at will</li>
+                                            <li value="-">By spatially tailoring the geometry of the resonators in an
+                                                array and hence their frequency response, one can design the phase
+                                                discontinuity along the interface and mold the wavefront of the
+                                                reflected and refracted beams in nearly arbitrary ways</li>
+                                            <li value="-"><b><b>Example: Linear Phase Discontinuity from an array of
+                                                        nano-rods:</b></b> <br /> <img style="padding-top: 10px"
+                                                    width="60%" src="images/linear-discon.png"></img></li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                Information Processing - Limitations of Phase-only Modulation
+                            </div>
+                            <div class="content">
+                                <ol class="ui list">
+                                    <li value="•">Often times we want to process a wavefront profile: For example, in
+                                        the case of image processing, typical tasks are to increase the resolution of
+                                        images or reduce noises</li>
+                                    <li value="•">We can utilize the fourier transformation (FT) to transform the image
+                                        information (gray scaled pixels) form the spatial domain into frequencies domain
+                                        and do further process like applying filters for certain frequencies before
+                                        transforming the altered image back to the spatial domian via and inverese
+                                        fourier transformation (iFT)
+                                        </br>
+                                        <img style="width: 60%; padding: 15px;"
+                                            src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\underbrace{&space;\boxed&space;{f(x,y)}&space;}_\text{Spatial&space;Domain}&space;\xrightarrow[\text{FT}]{{\mathcal{F}[f(x,y)]}}&space;\underbrace{&space;\boxed{F(u,v)&space;\xrightarrow[\text{Operation}]{\textit{R[F(u,v)]}}&space;G(u,v))}&space;}_\text{Frequency&space;Domain}&space;\xrightarrow[\text{iFT}]{{{F^{-1}}[G(u,v)]}}&space;\underbrace{&space;\boxed&space;{g(x,y)}&space;}_\text{Spatial&space;Domain}"
+                                            title="\underbrace{ \boxed {f(x,y)} }_\text{Spatial Domain} \xrightarrow[\text{FT}]{{\mathcal{F}[f(x,y)]}} \underbrace{ \boxed{F(u,v) \xrightarrow[\text{Operation}]{\textit{R[F(u,v)]}} G(u,v))} }_\text{Frequency Domain} \xrightarrow[\text{iFT}]{{{F^{-1}}[G(u,v)]}} \underbrace{ \boxed {g(x,y)} }_\text{Spatial Domain}" />
+
+                                        <img style="padding: 15px;" src="images/FT-Filter.jpg">
+                                    </li>
+                                    <li value="•">
+                                        If we want to process the wavefronts generated by phase-only metasurfaces using
+                                        FT like in the example above, there is a major problem in the reconstuction
+                                        process of the image during the iFT
+                                        </br>
+                                        <b><b></b>Problem of Phase-only modulation:</b>
+                                    </li>
+                                    <ol>
+                                        <li value="-" style="padding-left:40px">For the reconstruction of an image both
+                                            the phase AND amplitude(magitude) play an important role.
+                                        </li>
+                                        <li value="-" style="padding-left:40px">Phase-only or amplitude-only modulation
+                                            cannot fully reconstruct the original picture
+                                            <img style="width: 100%; padding: 15px;" src="images/munich-phase-only.jpg">
+                                        </li>
+                                    </ol>
+                                </ol>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                   
+                </div>
+
+
+            </div>
+
+            <div class="title" id="header">
+                <i class="dropdown icon"></i>
+                Photopolymers in Holography
+            </div>
+
+
+            <div class="content">
+                <div class="accordion">
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Why use photopolymers in holography?
+                    </div>
+
+                    <div class="content">
+                        <ol class="ui list">
+                            <li value="•">Photopolymers are used in holographic applications due to their higher diffraction efficiency with an acceptable energetic sensitivity.  </li>
+                            <li value="•">They are easily made at a reduced cost and have great flexibility as holographic recording materials</li>
+                        </ol>
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What are photopolymers?
+                    </div>
+
+                    <div class="content">
+                        <ol class="ui list">
+                            <li value="•">A photopolymer is an organic polymer sensitive to the light of certain wavelength</li>
+                            <li value="•">The incorporation of liquid crystals enables the variation of the electrooptical properties by means of an electric field</li>
+                            <li value="•">Liquid crystal molecules add optical anisotropy to the photopolymer - therefore it is possible to change the photopolymer response by modifying the electric field applied</li>
+                            <li value="•">The orientation of the liquid crystal produces a refractive index variation which changes the diffraction efficiency. </li>
+                        </ol>
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How do photopolymers work?
+                    </div>
+
+                    <div class="content">
+                        <ol class="ui list">
+                            <li value="•">The basic formula is made of
+                                <ol style="padding-left:40px"> 
+                                    <li value="-">sensitizer dye</li>
+                                    <li value="-">an initiator to generate free radicals</li>
+                                    <li value="-">one or more polymerizable monomers</li>
+                                </ol>
+                            </li>
+                            <li value="•">To record a diffractive optical element into a photopolymer (a phase media) is by refractive index modulation between the polymerized and non polymerized areas, which correspond to illuminated and nonilluminated areas, respectively</li>
+                            <li value="•">The photopolymerization reaction (Figure 1) starts when the photopolymers are illuminated by light of certain wavelength, and the monomer starts to polymerize, causing a shrinkage on the illuminated areas, increasing the refractive index and decreasing the monomer concentration of these areas. </li>
+                            <li value="•">This chemical compound gradient of the monomer, dye and radical generator causes a diffusion of the different components from the areas where the concentration is high, “dark areas” to the areas where the concentration has decreased, the “illuminated areas.”</li>
+                            <li value="•">This diffusion causes a decreasing of volume in the dark areas, and therefore, the volume of the illuminated areas is increased by incoming molecules, counteracting the shrinkage due to the polymerization process.</li>
+                        </ol>
+
+                        INSERT PICTURE
+                        <br>
+                        <br>
+
+                        What are the specific goals for this project?
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Goals for this project
+                    </div>
+
+                    <div class="content">
+
+
+                        What are the specific goals for this project?
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="title" id="header">
+                <i class="dropdown icon"></i>
+                Dielectric Nanoantennas
+            </div>
+
+
+            <div class="content">
+                <div class="accordion">
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Why are dielectric nanoantennas used for?
+                    </div>
+
+                    <div class="content">
+                        TEXT FOR WHY DIELECTRIC NANOANTENNAS ARE USED
+                        <ol class="ui list">
+                            <li value="•">Compared to plasmonic nanoantennas, dielectric nanoantennas have low dissipative losses and therefore a higher radiation efficiency.</li>
+                            <li value="•">-	A high index dielectric constant supports both electric and magnetic resonances (how??)</li>
+                        </ol>
+
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How do dielectric nanoantennas work?
+                    </div>
+
+                    <div class="content">
+                       TEXT FOR HOW DIELECTRIC NANOANTENNAS WORK
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How do nonlinear optical effects arise from dielectric nanoantennas? Intro nonlinear optics?
+                    </div>
+
+                    <div class="content">
+                        TEXT FOR NONLINEAR OPTICS 
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What are the nonlinear characteristics of different materials? 
+                    </div>
+
+                    <div class="content">
+                       TEXT FOR NONLINEAR CHARACTERISTICS OF DIFFERENT MATERIALS
+                    </div>
+
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Goals for the simulations
+                    </div>
+
+                    <div class="content">
+                        What are the specific goals for this project?
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    <script>
+        $('.ui.accordion').accordion('setting', {
+            exclusive: false
+        });
+        $('.ui.list').list();
+    </script>
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
+</body>
+
+</html>
