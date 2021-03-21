@@ -1,0 +1,132 @@
+body {
+    margin: 0px auto;
+    width: 80%;
+
+    font-family: quasimoda-2,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#header {
+    position: relative;
+    margin-top: 5em;    
+    margin-bottom: 5em;
+}
+
+#header-text {
+    display: inline;
+    font-size: 5.8em;
+}
+
+#home-header-text {
+    display: inline;
+    font-size: 8em;
+}
+
+#menu {
+    position: absolute;
+    top: 2.25em;
+    right: 0px;
+    font-size: 2em;
+}
+
+.medium-text {
+    font-size: 4em;
+    margin: 0px;
+}
+
+.large-text {
+    font-size: 7em;
+    margin: 0px;
+}
+
+#contact-text {
+    font-size: 3em;
+    margin-top: 5em;
+    text-align: center;
+}
+
+#email-link {
+    margin-top: 3em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.faded {
+    opacity: 30%;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.attribution-text {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+.thumbnail-container {
+    width: 33%;
+}
+
+.thumbnail-image {
+    width: 100%;
+}
+
+.thumbnail-image:hover {
+    filter: invert(10%);
+}
+
+.project-list-item {
+    display: flex;
+    margin-top: 3em;
+}
+
+.project-text-container {
+    padding-left: 3em;
+}
+
+.video-caption {
+    padding-left: 3em;
+    padding-top: 0em;
+}
+
+.video-caption p {
+    margin: 0em;
+}

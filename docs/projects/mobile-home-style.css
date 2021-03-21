@@ -1,0 +1,27 @@
+.mobile-only {
+    display: none;
+}
+
+#hi-text {
+    margin-bottom: 5rem;
+    font-size: 8em;
+}
+
+@media (max-width: 730px) { 
+    #menu {
+        position: static;
+    }
+
+    li {
+        margin-left: 0px;
+        margin-right: 1em;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+ }
