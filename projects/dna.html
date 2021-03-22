@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Laura Kern - DNA</title>
+<title>Laura Kern - Theoretical Biophysics Seminar</title>
 <link href="style.css" rel="stylesheet"/>
 <link href="mobile-style.css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://use.typekit.net/kcq5zvl.css">
@@ -20,10 +20,18 @@
 </div>
 
 <h2>
-    DNA
+    Theoretical Biophysics Seminar
 </h2>
 
-<p><a href="content/SpatialOrganisation.pptx">Download Project Presentation</a></p>
+
+<p class="regular-text">
+    Here are some excerpts from my talk on spatial organization of bacterial transcription and translation. It is very important to mention, that when you design a model, it <i>always</i> depends on what you want to describe with it. Even though one model of the system might coincide well with a type of experimental observation, that does not make this model universally descibe the whole system. This is vital to keep in mind when both using and constructing models.
+</p>
+
+<p class="regular-text">If you're interested in checking out the full PowerPoint presentation you can download it by clicking here: <a href="content/SpatialOrganisation.pptx"> <b><i>Download Presentation (873,3 MB)</i></b> </a></p> 
+
+<p class="regular-text">If you want to check out my talking points for the presentation you can also download this PDF it by clicking here: <a href="content/seminar_outline.pdf"> <b><i>Download Talking Points (0,2 MB)</i></b> </a></p> 
+
 
 <h3>Excerpts from presentation: Animations</h3>
 
@@ -34,8 +42,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>Friendly cover animation.</p>
     </div>
 </div>
 
@@ -46,8 +54,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>This is a protein. There are many different types of proteins each with their own particular purpose.</p>
     </div>
 </div>
 
@@ -58,8 +66,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>The blueprints for each protein are encoded on the DNA. To synthesize a protein, DNA is first transcribed to mRNA (grey wiggly bits), and then the mRNA is translated by ribosomes (pink blobs) to make a protein.</p>
     </div>
 </div>
 
@@ -70,8 +78,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>Due to the dense nucleus at the center of the cell, the mRNA is pushed outward, the more it is synthesized.</p>
     </div>
 </div>
 
@@ -82,8 +90,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>To model this spacial organization, we can make use of the symmetry of the model and only focus on one half. </p>
     </div>
 </div>
 
@@ -94,8 +102,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>In order to understand how to set up the reaction-diffusion equation, let's begin by looking at how to mathematically define "diffusion" in the system. Fist, we simplify the geometry by counting the number of ribosomes per unit volume and projecting that onto a 1D geometry. The diffusion of ribosomes can be described by a descrete change in density along the x-axis. </p>
     </div>
 </div>
 
@@ -106,8 +114,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>Next, let's have a look at the different reactions in the sysytem. Ribosomes can attach to the mRNA with a rate of kT_on and start translating. After some time they detach with a rate kT_off. It has been experimentally seeen that some ribosomes attach to the mRNA but do not translate any proteins. This happens at a rate kB_on. These lazy ribosomes then detach after a while with a rate of kB_off. Another reaction that can happen is when the mRNA breaks up and both the translating anfd the lazy ribosomes are released. This happens with a rate beta.</p>
     </div>
 </div>
 
@@ -118,8 +126,8 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>In the last clip we see the results from the numerical simulation of this model. It shows that the as the density of ribosomes on the mRNA increases, the further they are pushed away from the center of the cell due to volume exclusion.</p>
     </div>
 </div>
 
@@ -130,13 +138,13 @@
             Your browser does not support the video tag.
         </video> 
     </div>
-    <div class='video-caption'>
-        <p>TEXT</p>
+    <div class='project-text-container'>
+        <p>The way the DNA in the nucleus is modeled is through a random walk on a grid. The entropic force of this DNA-spring pushed against the pressure created by the increasing volume of the mRNA. This back-and-forth between forces determines the size of the nucleus. The siumulations produces an avergae nucleus that matches experimental measuremens. </p>
     </div>
 </div>
 
 <p class="attribution-text">
-    If you would like to use this clip in your project, please attribute it to Laura Kern and provide a link to <a href="https://www.laura-kern.com">www.laura-kern.com</a>
+    If you would like to use these clips in your project, please attribute it to Laura Kern and provide a link to <a href="https://www.laura-kern.com">www.laura-kern.com</a>
 </p>
 
 </body>
